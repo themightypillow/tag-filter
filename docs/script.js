@@ -84,7 +84,7 @@ function updateGameList() {
 
 tagSearch.addEventListener('keyup', showDropdownTags);
 
-fetch('data/games.json')
+fetch('games.json')
     .then(response => response.json())
     .then(data => {
         games = data['match'];
