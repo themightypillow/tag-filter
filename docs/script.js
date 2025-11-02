@@ -89,4 +89,5 @@ fetch('games.json')
     .then(data => {
         games = data['match'];
         tags = data['all tags'];
+        displayGames(games);
     }); 
